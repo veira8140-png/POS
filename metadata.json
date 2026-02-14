@@ -1,0 +1,7 @@
+{
+  "name": "Veira | Retail Control & Visibility",
+  "description": "Professional retail management system for Kenyan businesses. Certainty in every sale.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
