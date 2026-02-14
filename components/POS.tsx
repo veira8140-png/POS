@@ -158,13 +158,14 @@ const POS: React.FC<POSProps> = ({ products, onCompleteTransaction, vatRate }) =
       <div className="flex-1 flex flex-col min-h-0">
         <div className="mb-6 space-y-4">
           <div className="relative">
-            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+            {/* LIQUID GLASS SEARCH BAR IN POS */}
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-[#2C0D36]">
               <Icons.Search />
             </div>
             <input
               type="text"
               placeholder="Quick search items..."
-              className="block w-full pl-12 pr-4 py-4 border-2 border-slate-100 rounded-2xl bg-white focus:outline-none focus:border-[#783D77]/30 transition-all text-sm font-medium"
+              className="block w-full pl-12 pr-4 py-4 bg-white/60 backdrop-blur-xl border border-white/40 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#2C0D36]/10 text-[#2C0D36] font-black text-sm shadow-inner placeholder:text-slate-400 placeholder:font-medium transition-all"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
