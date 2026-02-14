@@ -120,7 +120,14 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
         <div className="mt-12 lg:absolute lg:bottom-8 lg:left-8 lg:right-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] text-slate-400 font-black uppercase tracking-[0.2em]">
            <p>© 2026 Veira POS</p>
            <div className="flex gap-6">
-              <button className="hover:text-slate-900">Help</button>
+              <a 
+                href="https://wa.me/254755792377" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-slate-900 transition-colors"
+              >
+                Help
+              </a>
               <button className="hover:text-slate-900">Legal</button>
            </div>
         </div>
